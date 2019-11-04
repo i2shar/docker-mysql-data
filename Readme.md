@@ -1,10 +1,11 @@
-## MySQL 8 Docker image with sample databases
+## MySQL 8 Docker image prepopulated with sample databases
 
-This repository builds a MySQL 8 Docker image with prepopulated sample databases:
+This repository builds a MySQL 8 Docker image prepopulated with sample databases:
 * Employees Sample Database - https://dev.mysql.com/doc/employee/en/
 * Sakila Sample Database - https://dev.mysql.com/doc/sakila/en/
 
-### Running the image
+### Option 1: Running the image from Docker Hub
+
 ```bash
    # Create a directory for mapping MySQL data
    mkdir -p $HOME/docker-vols/mysql-data
@@ -17,8 +18,13 @@ This repository builds a MySQL 8 Docker image with prepopulated sample databases
    -p 3306:3306 \
    i2shar/mysql-data
    ```
-   
-### Building your own
+
+![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/i2shar/mysql-data)
+
+Docker Hub link: https://hub.docker.com/r/i2shar/mysql-data
+
+
+### Option 2: Building your own
 
 1. Clone this repository
     ```bash
